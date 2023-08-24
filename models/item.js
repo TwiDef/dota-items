@@ -14,7 +14,7 @@ const itemSchema = mongoose.Schema({
         required: true
     },
     rarity: {
-        type: String,
+        type: Number,
         required: true
     },
     itemImage: {

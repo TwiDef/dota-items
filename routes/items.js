@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getItems, createItem } = require("../controllers/items");
+const { getItems, createItem, getItem } = require("../controllers/items");
 const path = require("path");
 const multer = require("multer");
 
@@ -20,7 +20,7 @@ router.get("/", getItems);
 
 // @route GET /api/item/:id
 // @des Get single item on id
-router.get("/:id", (req, res) => res.send('Get single item'));
+router.get("/:id", getItem);
 
 // @route POST /api/items
 // @des Create single item
