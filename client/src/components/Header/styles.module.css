@@ -3,8 +3,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    /* background: linear-gradient(180deg, #191a43 0%, #442d85 100%); */
-    background-color: #1a1c21;
+    background-color: #23262d;
     overflow: hidden;
 }
 
