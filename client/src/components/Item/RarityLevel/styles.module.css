@@ -1,0 +1,20 @@
+.rarityWrapper {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
+
+.rarityIcon {
+    width: 36px;
+    height: 36px;
+    color: gold;
+}
+
+.rarityLevel {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    font-size: 16px;
+    left: 14px;
+    top: 7px;
+}

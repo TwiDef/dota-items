@@ -20,7 +20,7 @@ const Items = (props) => {
     return (
         <div>
             <ContentWrapper>
-                {items && items.map(item => <Item item={item} />)}
+                {items && items.map(item => <Item key={item._id} {...item} />)}
             </ContentWrapper>
 
         </div>

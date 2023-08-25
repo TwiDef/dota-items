@@ -1,0 +1,14 @@
+.item {
+    position: relative;
+    cursor: pointer;
+}
+
+.image {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    width: 300px;
+}
+
+.title {
+    font-size: 18px;
+}
