@@ -12,7 +12,7 @@ const Item = ({ name = "", price = 0, description = "", itemImage = "", rarity =
             {itemImage && <img className={styles.image} src={itemImage} alt="" />}
             <div className={styles.info}>
                 <h2 className={styles.title}>{name}</h2>
-                <span className={styles.price}>{price}</span>
+                <span className={styles.price}>{price} ₽</span>
             </div>
         </Link>
     );

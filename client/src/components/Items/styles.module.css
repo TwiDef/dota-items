@@ -1,0 +1,40 @@
+.itemsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.sort {
+    height: 80px;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    background: #23262d;
+}
+
+.itemsHeader {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createItemBtn {
+    width: 220px;
+    height: 40px;
+    border: 4px solid #454d54;
+    display: flex;
+    justify-content: center;
+    background-color: #454d54;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.createItemBtn:hover {
+    transform: scale(1.04);
+}
+
+.sortBtn {
+    font-size: 22px;
+}

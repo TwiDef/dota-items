@@ -1,6 +1,12 @@
 .item {
     position: relative;
     cursor: pointer;
+    width: 300px;
+    transition: all 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.03);
 }
 
 .image {
@@ -10,5 +16,18 @@
 }
 
 .title {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f5;
+}
+
+.price {
+    font-weight: bold;
+    color: #f5f5f5;
 }
