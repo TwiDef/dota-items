@@ -10,7 +10,9 @@ const Button = ({
 }) => {
     return (
         <div className={containerClassName}>
-            <span className={`${isBackButton ? styles.backButton : styles.button} ${className}`}>
+            <span
+                onClick={onClick}
+                className={`${isBackButton ? styles.backButton : styles.button} ${className}`}>
                 {children}
             </span>
         </div>

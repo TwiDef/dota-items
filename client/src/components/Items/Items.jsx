@@ -8,10 +8,12 @@ import Item from '../Item/Item';
 import ContentWrapper from '../ContentWrapper/ContentWrapper';
 import styles from './styles.module.css';
 import Button from '../Button/Button';
+import { useSortItems } from '../../hooks/useSortItems';
 
 const Items = (props) => {
     const dispatch = useDispatch()
     const { items, isLoading } = useSelector(state => state.items)
+    const { isDescSort, setIsDescSort, sortedItems } = useSortItems(items || [])
 
     useEffect(() => {
         dispatch(getItems())
@@ -25,8 +27,11 @@ const Items = (props) => {
         <>
             <div className={styles.sort}>
                 <ContentWrapper className={styles.itemsHeader}>
-                    <Button className={styles.sortBtn}>
-                        Сортировать по цене
+                    <Button
+                        className={styles.sortBtn}
+                        onClick={() => setIsDescSort(!isDescSort)}
+                    >
+                        Сортировать по цене {`${isDescSort ? "+" : "-"}`}
                     </Button>
                     <Link
                         to={paths.createItem}
@@ -37,7 +42,7 @@ const Items = (props) => {
             </div>
             <div>
                 <ContentWrapper className={styles.itemsGrid}>
-                    {items && items.map(item => <Item key={item._id} {...item} />)}
+                    {sortedItems && sortedItems.map(item => <Item key={item._id} {...item} />)}
                 </ContentWrapper>
 
             </div>
