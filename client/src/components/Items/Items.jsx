@@ -6,9 +6,9 @@ import Spinner from '../Spinner/Spinner';
 import { paths } from '../../paths';
 import Item from '../Item/Item';
 import ContentWrapper from '../ContentWrapper/ContentWrapper';
-import styles from './styles.module.css';
 import Button from '../Button/Button';
 import { useSortItems } from '../../hooks/useSortItems';
+import styles from './styles.module.css';
 
 const Items = (props) => {
     const dispatch = useDispatch()

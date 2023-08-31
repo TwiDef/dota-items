@@ -1,0 +1,42 @@
+.item {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    place-items: center;
+    min-height: 50vh;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.buyBtnContainer {
+    margin-bottom: 30px;
+}
+
+.desc {
+    line-height: 26px;
+    font-size: 24px;
+}
+
+.price {
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.image {
+    width: 360px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.reverseBtn,
+.orderBtn {
+    border: none;
+    background-color: #23262d;
+    display: flex;
+    align-items: center;
+}

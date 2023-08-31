@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 const Spinner = (props) => {
     return (
-        <div className={styles.spinner}>Загрузка...</div>
+        <div className={styles.spinner}></div>
     );
 }
 
