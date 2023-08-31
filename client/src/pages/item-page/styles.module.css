@@ -1,3 +1,4 @@
+
 .item {
     padding: 50px 0;
     display: grid;
@@ -33,7 +34,7 @@
     object-fit: cover;
 }
 
-.reverseBtn,
+.backwardBtn,
 .orderBtn {
     border: none;
     background-color: #23262d;

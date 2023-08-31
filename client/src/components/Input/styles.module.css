@@ -1,0 +1,28 @@
+.input {
+    padding: 10px;
+    border: 0.5px solid rgba(255, 255,255, 0.5);
+    border-radius: 3px;
+    outline: none;
+    color: #23262d;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgba(255, 255,255, 0.75);
+}
+
+.input::placeholder {
+    font-size: 18px;
+    color: #23262d;
+}
+
+.container {
+    margin: 20px 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color:tomato;
+    font-size: 18px;
+}

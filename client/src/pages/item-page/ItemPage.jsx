@@ -24,7 +24,7 @@ const ItemPage = (props) => {
             <ContentWrapper className={styles.item}>
                 <div className={styles.descContent}>
                     <Button
-                        className={styles.reverseBtn}
+                        className={styles.backwardBtn}
                         onClick={() => navigate(-1)}
                     >Назад</Button>
                     <h1 className={styles.title}>{item.name}</h1>
