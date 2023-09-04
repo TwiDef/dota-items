@@ -10,9 +10,15 @@ const getItem = async (id) => {
     return item.data
 }
 
+const createItem = async (itemData) => {
+    const item = await axios.post("/api/items", itemData)
+    return item.data
+}
+
 const itemsService = {
     getItems,
-    getItem
+    getItem,
+    createItem
 }
 
 export default itemsService;
